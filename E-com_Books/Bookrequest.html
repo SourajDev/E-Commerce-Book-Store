@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/df78366a05.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+    <script>
+        function done(){
+            alert("Your request has been submitted");
+        }
+    </script>
+</head>
+<body>
+    <div class="box15">
+        <div class="title">Order over 799/-are eligible for free delivery</div> 
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="Bestseller.html">Bestseller</a>
+            <a href="Bookrequest.html">Book Request</a>
+            <a href="#about_scroll">About Us</a>
+            <i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="SEARCH" class="btn5">
+            <a href="Signup.html"><button class="btn50">Login & Sign Up</button></a>
+        </div>
+        <div class="container100">
+            <header>Book Request</header>
+    
+            <form action="php/requestform.php" method="post">
+                <div class="form first">
+                    <div class="details personal">
+                        <span class="title">Personal Details</span>
+    
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Full Name</label>
+                                <input type="text" placeholder="Enter your name" required name="P_name" id="P_name">
+                            </div>
+    
+                            <div class="input-field">
+                                <label>City</label>
+                                <input type="text" placeholder="Enter Your City" required name="city_n" id="city_n">
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Email</label>
+                                <input type="text" placeholder="Enter your email" required name="email" id="email">
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Mobile Number</label>
+                                <input type="number" placeholder="Enter mobile number" required name="mobile_no" id="mobile_no">
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Gender</label>
+                                <select required name="gender" id="gender">
+                                    <option disabled selected>Select gender</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Others</option>
+                                </select>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Occupation (Optional)</label>
+                                <input type="text" placeholder="Enter your ccupation" name="occupation" id="occupation">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="details ID">
+                        <span class="title">Book Details</span>
+    
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Book Name</label>
+                                <input type="text" placeholder="Enter Book Name" required name="book name" id="book name">
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Isbn Number</label>
+                                <input type="number" placeholder="Enter Isbn number" required name="isbn number" id="isbn number">
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Book Author</label>
+                                <input type="text" placeholder="Enter Author Name" required name="book author" id="book author">
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Issued State (Optional)</label>
+                                <input type="text" placeholder="Enter issued state" name="state" id="state">
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Delivery Date (To)</label>
+                                <input type="date" placeholder="Enter your issued date" required name="date to" id="date to">
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Delivery Date (from)</label>
+                                <input type="date" placeholder="Enter expiry date" required name="date from" id="date from">
+                            </div>
+                        </div>
+    
+                        <button class="nextBtn">
+                            <span class="btnText" onclick="done()">Submit</span>
+                        </button>
+
+                </div>
+
+    </div>
+   
+</body>
+</html>

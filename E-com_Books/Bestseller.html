@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/df78366a05.js" crossorigin="anonymous"></script>
+  <title>E-commerce Product Page</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="box1">
+    <div class="title">Order over 799/-are eligible for free delivery</div> 
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="Bestseller.html">Bestseller</a>
+        <a href="Bookrequest.html">Book Request</a>
+        <a href="#">About Us</a>
+        <i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="SEARCH" class="btn5" onkeyup="search()" id="find">
+        <script src="js/find.js"></script>
+        <a href="Signup.html"><button class="btn50">Login & Sign Up</button></a>     
+    </div>
+    <div class="container">
+      <header>
+        <h1>All Books List</h1>
+      </header>
+      <div class="products-grid">
+        <div class="product">
+          <a href="./books/Aboutus.html"><img src="./images/book1.jpg" alt="Product 1"></a>
+          <h2>The Sale Of Goods</h2>
+          <p>Law Books For Goods Related Things</p>
+        </div>
+        <div class="product">
+          <a href="./books/Aboutus1.html"><img src="./images/book2.jpg" alt="Product 1"></a>
+          <h2>Hindu Laws</h2>
+           <p>Law Books For Goods Related Things</p>
+        </div>
+        <div class="product">
+          <a href="./books/Aboutus2.html"><img src="./images/book3.jpg" alt="Product 1"></a>
+          <h2>Muslim Laws</h2>
+           <p>Law Books For Goods Related Things</p>
+      
+        </div>
+        <div class="product">
+          <a href="./books/Aboutus3.html"><img src="./images/book4.jpg" alt="Product 1"></a>
+          <h2>The Specific Relife Act 1963</h2>
+           <p>Law Books For Goods Related Things</p>
+        
+        </div>
+        <div class="product">
+          <a href="./books/Aboutus4.html"><img src="./images/book5.jpg" alt="Product 1"></a>
+          <h2>The Indian Act Evidence</h2>
+           <p>Law Books For Goods Related Things</p>
+         
+        </div>
+        <div class="product">
+          <a href="./books/Aboutus5.html"><img src="./images/book6.jpg" alt="Product 1"></a>
+          <h2>The Protection Of Woman</h2>
+           <p>Law Books For Goods Related Things</p>
+        
+        </div>
+        <div class="product">
+          <a href="./books/Aboutus.html"><img src="./images/book1.jpg" alt="Product 1"></a>
+          <h2>The Sale Of Goods</h2>
+           <p>Law Books For Goods Related Things</p>
+          
+        </div>
+        <div class="product">
+          <a href="./books/Aboutus.html"><img src="./images/book1.jpg" alt="Product 1"></a>
+          <h2>The Sale Of Goods</h2>
+           <p>Law Books For Goods Related Things</p>
+         
+        </div>
+        <div class="product">
+          <a href="./books/Aboutus.html"><img src="./images/book1.jpg" alt="Product 1"></a>
+          <h2>The Sale Of Goods</h2>
+           <p>Law Books For Goods Related Things</p>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div id="cart-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="toggleCart()">&times;</span>
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <button onclick="clearCart()">Clear Cart</button>
+        <button onclick="checkout()">Checkout</button>
+      </div>
+    </div>
+  
+    <script src="./js/script2.js"></script>
+  
+  </div>
+</body>
+</html>
